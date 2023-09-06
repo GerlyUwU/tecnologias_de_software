@@ -1,6 +1,5 @@
 public class MostrarInfo {
-    public void MostrarInfo(String nombre, String raza, String alimentacion, String habitad,String sonido){
-        System.out.println("el nombre del animal es: "+nombre+ " el sonido que hace se le llama: "+sonido+
-        " pertenece a la raza de "+raza + " su alimentafcion es: "+alimentacion+" y su habitad es "+habitad);
+    public void MostrarInformacion(String nombre, String raza, String alimentacion, String habitad){
+        System.out.println("El nombre del animal es " + nombre + " pertenece a la raza de " + raza + " su alimentacion es " + alimentacion + " su habitad es " + habitad);
     }
 }
