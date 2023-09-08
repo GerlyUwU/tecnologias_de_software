@@ -1,14 +1,14 @@
-public class Jugador {
-    private String armaActual;
+// Clase Player que utiliza una instancia de Weapon.
+class Jugador {
+    private IArma armaActual;
 
-public Jugador (String arma){
-    this.armaActual= arma;
-}
+    // Constructor que toma una instancia de Weapon.
+    public Jugador(IArma arma) {
+        this.armaActual = arma;
+    }
 
-public void Disparo(String arma){
-    armaActual
-
-}
-
-
+    // Método para que el jugador dispare.
+    public void disparo() {
+        armaActual.disparar();
+    }
 }

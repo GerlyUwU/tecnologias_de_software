@@ -1,3 +1,3 @@
 public interface IArma {
-    public void Disparo();
+    public void disparar();
 }
