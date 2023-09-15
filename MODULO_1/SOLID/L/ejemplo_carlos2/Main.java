@@ -5,6 +5,10 @@ public class Main {
         Elefante dumbo = new Elefante("dumbo", "sabana", "1.4 toneladas");
         ronie.Golpear();
         dumbo.agujero();
+
+        HeavyWeightAnimal roni = new HeavyWeightAnimal("huho", "las choapas", "3 toneladas");
+        
+
     }
     
 }
