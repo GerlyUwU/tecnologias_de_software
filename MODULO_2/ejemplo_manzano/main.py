@@ -13,6 +13,10 @@ class SaludoEnIngles(Saludo):
     def saludar(self):
         return "Hello!"
 
+class SaludoEnJapones(Saludo):
+    def saludar(self):
+        return "konichiwa UWU"
+
 # Factory para crear saludos
 class SaludoFactory:
     def create_saludo(self, idioma):
@@ -20,6 +24,8 @@ class SaludoFactory:
             return SaludoEnEspanol()
         elif idioma == "ingles":
             return SaludoEnIngles()
+        elif idioma =="japones":
+            return SaludoEnJapones()
         else:
             return None
 
@@ -33,6 +39,10 @@ saludo_espanol = factory.create_saludo("espanol")
 # Crear un saludo en inglés
 saludo_ingles = factory.create_saludo("ingles")
 
+#crea un saludo en japones 
+saludo_japones = factory.create_saludo("japones")
+
 # Imprimir los saludos
 print(saludo_espanol.saludar())  # Imprimirá "¡Hola!"
 print(saludo_ingles.saludar())  # Imprimirá "Hello!"
+print(saludo_japones.saludar())
