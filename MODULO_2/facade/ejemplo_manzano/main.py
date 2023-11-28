@@ -1,23 +1,30 @@
+# Subsistemas
+
 class Motor:
     def encender(self):
-        print("motor encendido")
+        print("Motor encendido")
 
     def apagar(self):
-        print("motor apagado")
+        print("Motor apagado")
+
 
 class Luces:
     def encender_luces(self):
-        print("luces encendidas")
+        print("Luces encendidas")
 
     def apagar_luces(self):
-        print("luces apagadas")
+        print("Luces apagadas")
+
 
 class Radio:
     def encender_radio(self):
-        print("radio encendida")
+        print("Radio encendida")
 
     def apagar_radio(self):
-        print("radio apagada")
+        print("Radio apagada")
+
+
+# Fachada
 
 class CocheFachada:
     def _init_(self):
@@ -25,18 +32,21 @@ class CocheFachada:
         self.luces = Luces()
         self.radio = Radio()
 
-    def encenderCoche(self):
+    def encender_coche(self):
         self.motor.encender()
         self.luces.encender_luces()
         self.radio.encender_radio()
-        print("coche encendido")
+        print("Coche encendido")
 
-    def apagarCoche(self):
+    def apagar_coche(self):
         self.motor.apagar()
         self.luces.apagar_luces()
         self.radio.apagar_radio()
-        print("coche apagado")
+        print("Coche apagado")
+
+
+# Uso de la fachada
 
 coche = CocheFachada()
-coche.encenderCoche()
-coche.apagarCoche()
+coche.encender_coche()
+coche.apagar_coche()
